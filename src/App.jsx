@@ -14,7 +14,7 @@ const navigation = [
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/englishforit/">
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
