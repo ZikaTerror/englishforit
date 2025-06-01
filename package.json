@@ -1,8 +1,8 @@
 {
+  "homepage": "http://zikaterror.github.io/englishforit", 
   "name": "englishforit",
-  "private": true,
-  "homepage": "https://zikaTerror.github.io/englishforit", 
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
