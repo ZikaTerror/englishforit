@@ -3,12 +3,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 import Home from "./pages/Home";
-import AboutComputers from "./pages/AboutComputers";
 import Glossary from "./pages/Glossary";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About Computers", href: "/about" },
   { name: "Glossary", href: "/glossary" },
 ];
 
@@ -71,7 +69,6 @@ export default function App() {
         <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutComputers />} />
             <Route path="/glossary" element={<Glossary />} />
           </Routes>
         </main>

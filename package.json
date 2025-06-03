@@ -1,5 +1,5 @@
 {
-  "homepage": "http://zikaterror.github.io/englishforit", 
+  "homepage": "http://zikaterror.github.io/englishforit",
   "name": "englishforit",
   "version": "0.0.0",
   "private": true,
@@ -15,6 +15,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
+    "framer-motion": "^12.15.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.1"

@@ -1,10 +1,7 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { DeviceTabletIcon, ComputerDesktopIcon, DevicePhoneMobileIcon } from '@heroicons/react/20/solid'
+import { motion } from "framer-motion"
 
-const stats = [
-  { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-  { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-  { id: 3, name: 'New users annually', value: '46,000' },
-]
+const easing = [0.6, -0.05, 0.01, 0.99];
 
 export default function Home() {
   return (
@@ -39,172 +36,222 @@ export default function Home() {
             </div>
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                <div className="lg:pr-4">
-                    <div className="lg:max-w-lg">
-                    <p className="text-base/7 font-semibold text-indigo-600">Deploy faster</p>
-                    <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        A better workflow
-                    </h1>
-                    <p className="mt-6 text-xl/8 text-gray-700">
-                        Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
-                        eget aliquam. Quisque id at vitae feugiat egestas.
-                    </p>
+                    <div className="lg:pr-4">
+                        <div className="lg:max-w-lg">
+                            <p className="text-base/7 font-semibold text-indigo-600">What are</p>
+                            <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                                Computers
+                            </h1>
+                            <p className="mt-6 text-xl/8 text-gray-700">
+                                Computers are electronic devices that process data and perform tasks
+                                according to instructions given by software programs. They can perform
+                                a wide range of operations, from simple calculations to complex
+                                simulations.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                <img
-                    alt=""
-                    src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-                    className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                />
+                    <img
+                        alt=""
+                        src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+                        className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                    />
                 </div>
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                <div className="lg:pr-4">
-                    <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
-                    <p>
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                        vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                        erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                        semper sed amet vitae sed turpis id.
-                    </p>
-                    <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                        <li className="flex gap-x-3">
-                        <CloudArrowUpIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
-                        <span>
-                            <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
-                        </span>
-                        </li>
-                        <li className="flex gap-x-3">
-                        <LockClosedIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
-                        <span>
-                            <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
-                            ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                        </span>
-                        </li>
-                        <li className="flex gap-x-3">
-                        <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
-                        <span>
-                            <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
-                            vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                        </span>
-                        </li>
-                    </ul>
-                    <p className="mt-8">
-                        Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                        fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                        adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-                    </p>
-                    <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-                    <p className="mt-6">
-                        Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
-                        Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-                        tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                        turpis ipsum eu a sed convallis diam.
-                    </p>
+                    <div className="lg:pr-4">
+                        <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
+                            <p>
+                                Modern computers come in various forms, including desktops, laptops,
+                                tablets, and smartphones. They are essential tools in many areas of
+                                life, including education, business, science, and entertainment.
+                            </p>
+                            <ul role="list" className="mt-8 space-y-8 text-gray-600">
+                                <li className="flex gap-x-3">
+                                <ComputerDesktopIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
+                                <span>
+                                    <strong className="font-semibold text-gray-900">Desktop / Laptop</strong> — These are traditional computers used at home, school, or work. They are powerful and suitable for tasks like writing documents, browsing the web, or programming.
+                                </span>
+                                </li>
+                                <li className="flex gap-x-3">
+                                <DeviceTabletIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
+                                <span>
+                                    <strong className="font-semibold text-gray-900">Tablet</strong> — A touch-screen computer, smaller and more portable than a laptop. It’s great for reading, watching videos, or casual browsing.
+                                </span>
+                                </li>
+                                <li className="flex gap-x-3">
+                                <DevicePhoneMobileIcon aria-hidden="true" className="mt-1 size-5 flex-none text-indigo-600" />
+                                <span>
+                                    <strong className="font-semibold text-gray-900">Smartphone</strong> — A mobile device that fits in your pocket. It works like a mini-computer with access to apps, internet, camera, and more.
+                                </span>
+                                </li>
+                            </ul>
+                            <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">How do computers work?</h2>
+                            <p className="mt-6 text-gray-700">
+                                Computers work by following a set of instructions called a program. They take input (like typing on a keyboard or clicking a mouse),
+                                process it in the central processing unit (CPU), and then produce output (like showing something on the screen or printing).
+                            </p>
+                            <p className="mt-4 text-gray-700">
+                                Inside a computer, hardware components like the CPU, memory (RAM), and storage (SSD or HDD) work together. The CPU is like the "brain"
+                                — it performs calculations and controls tasks. Memory holds data temporarily, while storage keeps files permanently.
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
-
-
-        <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-            <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-                <svg
-                    viewBox="0 0 1024 1024"
-                    aria-hidden="true"
-                    className="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-                >
-                    <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
-                    <defs>
-                    <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                        <stop stopColor="#7775D6" />
-                        <stop offset={1} stopColor="#E935C1" />
-                    </radialGradient>
-                    </defs>
-                </svg>
-                <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-                    <h2 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                    Boost your productivity. Start using our app today.
-                    </h2>
-                    <p className="mt-6 text-pretty text-lg/8 text-gray-300">
-                    Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.
-                    </p>
-                    <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                    <a
-                        href="#"
-                        className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                    >
-                        Get started
-                    </a>
-                    <a href="#" className="text-sm/6 font-semibold text-white">
-                        Learn more <span aria-hidden="true">→</span>
-                    </a>
-                    </div>
-                </div>
-                <div className="relative mt-16 h-80 lg:mt-8">
-                    <img
-                    alt="App screenshot"
-                    src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
-                    width={1824}
-                    height={1080}
-                    className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                    />
-                </div>
-            </div>
-      </div>
-
-        <div className="bg-white py-24 sm:py-32">
+        
+        <section className="bg-gray-900 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-                {stats.map((stat) => (
-                    <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
-                    <dt className="text-base/7 text-gray-600">{stat.name}</dt>
-                    <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                        {stat.value}
-                    </dd>
-                    </div>
-                ))}
-                </dl>
-            </div>
-        </div>
-
-        <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
-            <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
-            <div className="mx-auto max-w-2xl lg:max-w-4xl">
-                <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/logos/workcation-logo-indigo-600.svg"
-                className="mx-auto h-12"
-                />
-                <figure className="mt-10">
-                <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-                    <p>
-                    “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                    molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+                <div className="sm:text-center">
+                    <h2 className="text-lg font-semibold leading-8 text-indigo-400">Key Element</h2>
+                    <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">What is the most important part?</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-300">
+                        Among all components, the CPU stands out. It acts like the brain of the machine, coordinating all tasks and decisions.
                     </p>
-                </blockquote>
-                <figcaption className="mt-10">
-                    <img
-                    alt=""
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    className="mx-auto size-10 rounded-full"
-                    />
-                    <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                    <div className="font-semibold text-gray-900">Judith Black</div>
-                    <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-gray-900">
-                        <circle r={1} cx={1} cy={1} />
-                    </svg>
-                    <div className="text-gray-600">CEO of Workcation</div>
+                </div>
+
+                <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="CPU Icon" className="w-20 h-20 mb-4" />
+                        <h3 className="text-xl font-semibold text-white">CPU</h3>
+                        <p className="mt-2 text-gray-400">
+                        The Central Processing Unit processes all instructions from software and hardware.
+                        </p>
                     </div>
-                </figcaption>
-                </figure>
+
+                    <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/843/843314.png" alt="Control" className="w-20 h-20 mb-4" />
+                        <h3 className="text-xl font-semibold text-white">Control Center</h3>
+                        <p className="mt-2 text-gray-400">
+                        It decides what tasks to perform and when, managing input/output and memory operations.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1792/1792808.png" alt="Decision-making" className="w-20 h-20 mb-4" />
+                        <h3 className="text-xl font-semibold text-white">Decision Maker</h3>
+                        <p className="mt-2 text-gray-400">
+                        All logical and arithmetic operations are handled by the CPU, making it essential.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+                >
+                    <h2 className="text-base font-semibold leading-7 text-indigo-600">Inside a Computer</h2>
+                    <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">What are the components?</p>
+                    <p className="mt-6 text-lg leading-8 text-gray-600">    
+                        A computer is made up of different parts, each with its own job. Here's a look inside.
+                    </p>
+                </motion.div>
+
+                <div className="mt-16 relative border-l-2 border-indigo-500 pl-6">
+                    {[
+                    {
+                        title: "CPU (Processor)",
+                        desc: "The brain of the computer – it executes instructions and manages operations.",
+                    },
+                    {
+                        title: "RAM (Memory)",
+                        desc: "Temporary memory that helps the computer run programs quickly.",
+                    },
+                    {
+                        title: "Hard Drive / SSD",
+                        desc: "Where all data is stored, including files, applications, and the operating system.",
+                    },
+                    {
+                        title: "Motherboard",
+                        desc: "The main board that connects all components and allows them to communicate.",
+                    },
+                    {
+                        title: "Power Supply",
+                        desc: "Converts electricity into usable power for the computer’s internal parts.",
+                    },
+                    {
+                        title: "GPU (Graphics Card)",
+                        desc: "Renders images and videos. Essential for gaming, design, or 3D work.",
+                    },
+                    {
+                        title: "Cooling System",
+                        desc: "Keeps the computer cool to prevent overheating and maintain performance.",
+                    },
+                    ].map((item, i) => (
+                    <motion.div
+                        key={i}
+                        className="mb-10 ml-6"
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: i * 0.2, duration: 0.6 }}
+                    >
+                        <span className="absolute -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 ring-8 ring-white">
+                        <svg
+                            className="h-5 w-5 text-white"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                        </svg>
+                        </span>
+                        <h3 className="text-lg font-semibold leading-6 text-gray-900">{item.title}</h3>
+                        <p className="mt-2 text-base leading-7 text-gray-600">{item.desc}</p>
+                    </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+        
+        <footer className="bg-white border-t mt-24">
+            <div className="max-w-7xl mx-auto px-6 py-16">
+                <h2 className="text-3xl font-bold text-gray-900 text-center">
+                Next: Discover 20+ essential IT terms
+                </h2>
+                <p className="mt-2 text-lg text-gray-600 text-center">
+                Explore our glossary with simple definitions and visual examples.
+                </p>
+
+                <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="group relative rounded-xl border border-gray-200 bg-gray-50 p-6 transition hover:shadow-lg hover:bg-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" alt="CPU" className="w-12 h-12 mb-4" />
+                        <h3 className="text-lg font-semibold text-gray-800">CPU</h3>
+                        <p className="mt-1 text-sm text-gray-600">The brain of the computer that performs calculations and tasks.</p>
+                    </div>
+
+                    <div className="group relative rounded-xl border border-gray-200 bg-gray-50 p-6 transition hover:shadow-lg hover:bg-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/10324/10324388.png" alt="RAM" className="w-12 h-12 mb-4" />
+                        <h3 className="text-lg font-semibold text-gray-800">RAM</h3>
+                        <p className="mt-1 text-sm text-gray-600">Temporary memory that stores active data and programs.</p>
+                    </div>
+
+                    <div className="group relative rounded-xl border border-gray-200 bg-gray-50 p-6 transition hover:shadow-lg hover:bg-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2807/2807830.png" alt="Operating System" className="w-12 h-12 mb-4" />
+                        <h3 className="text-lg font-semibold text-gray-800">Operating System</h3>
+                        <p className="mt-1 text-sm text-gray-600">Software that manages hardware and provides services to applications.</p>
+                    </div>
+                </div>
+
+                <div className="mt-12 flex justify-center">
+                    <a
+                        href="#/glossary"
+                        className="inline-block rounded-full bg-indigo-600 px-8 py-3 text-white font-medium hover:bg-indigo-500 transition"
+                    >
+                        Explore Full Glossary →
+                    </a>   
+                </div>
+            </div>
+        </footer>
 
     </div> 
   )
