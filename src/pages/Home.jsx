@@ -1,8 +1,6 @@
 import { DeviceTabletIcon, ComputerDesktopIcon, DevicePhoneMobileIcon } from '@heroicons/react/20/solid'
 import { motion } from "framer-motion"
 
-const easing = [0.6, -0.05, 0.01, 0.99];
-
 export default function Home() {
   return (
     <div className="bg-white">
