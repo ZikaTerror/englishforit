@@ -21,8 +21,8 @@ export default function App() {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <img
-                      alt="Your Company"
-                      src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                      alt="Yes its windows"
+                      src="https://winaero.com/blog/wp-content/uploads/2015/06/this-pc-computer-icon.png"
                       className="size-8"
                     />
                     <div className="hidden md:block ml-10 flex space-x-4">

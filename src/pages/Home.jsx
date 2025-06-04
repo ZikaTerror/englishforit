@@ -1,4 +1,5 @@
 import { DeviceTabletIcon, ComputerDesktopIcon, DevicePhoneMobileIcon } from '@heroicons/react/20/solid'
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 
 export default function Home() {
@@ -52,7 +53,7 @@ export default function Home() {
                 <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                     <img
                         alt=""
-                        src="https://tailwindcss.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+                        src="https://cdn.discordapp.com/attachments/559065485820297221/1379844468362055680/MSFT-Several-devices-with-Windows-11-bloom-on-screen-sitting-on-a-platform-RWZvQ4.avif?ex=6841b7cd&is=6840664d&hm=70cf5d35852193b7c2ccdc0942bd169767197fe3951f4820ff512ddfa06135c4&"
                         className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                     />
                 </div>
@@ -111,7 +112,7 @@ export default function Home() {
 
                 <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="CPU Icon" className="w-20 h-20 mb-4" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" alt="CPU Icon" className="w-20 h-20 mb-4" />
                         <h3 className="text-xl font-semibold text-white">CPU</h3>
                         <p className="mt-2 text-gray-400">
                         The Central Processing Unit processes all instructions from software and hardware.
@@ -119,7 +120,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/843/843314.png" alt="Control" className="w-20 h-20 mb-4" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/5423/5423371.png" alt="Control" className="w-20 h-20 mb-4" />
                         <h3 className="text-xl font-semibold text-white">Control Center</h3>
                         <p className="mt-2 text-gray-400">
                         It decides what tasks to perform and when, managing input/output and memory operations.
@@ -127,8 +128,8 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1792/1792808.png" alt="Decision-making" className="w-20 h-20 mb-4" />
-                        <h3 className="text-xl font-semibold text-white">Decision Maker</h3>
+                        <img src="https://cdn-icons-png.flaticon.com/512/2821/2821637.png" alt="Decision-making" className="w-20 h-20 mb-4" />
+                        <h3 className="text-xl font-semibold text-white">Decision Maker</h3> 
                         <p className="mt-2 text-gray-400">
                         All logical and arithmetic operations are handled by the CPU, making it essential.
                         </p>
