@@ -2,6 +2,37 @@ import { DeviceTabletIcon, ComputerDesktopIcon, DevicePhoneMobileIcon } from '@h
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion"
 
+const easing = [0.6, -0.05, 0.01, 0.99];
+
+const staggerContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15 }
+  }
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: easing }
+  }
+};
+
+const floatAnim = {
+  animate: {
+    y: [0, -15, 0],
+    transition: {
+      duration: 6,
+      repeat: Infinity,
+      repeatType: "loop",
+      ease: "easeInOut",
+    }
+  }
+};
+
 export default function Home() {
   return (
     <div className="bg-white">
@@ -34,22 +65,28 @@ export default function Home() {
                 </svg>
             </div>
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-                <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-                    <div className="lg:pr-4">
+                    {/* Text Side */}
+                    <motion.div
+                        className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+                        variants={staggerContainer}
+                        initial="hidden"
+                        animate="show"
+                    >   
+                        <motion.div className="lg:pr-4" variants={fadeInUp}>
                         <div className="lg:max-w-lg">
                             <p className="text-base/7 font-semibold text-indigo-600">What are</p>
                             <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                                Computers
+                            Computers
                             </h1>
                             <p className="mt-6 text-xl/8 text-gray-700">
-                                Computers are electronic devices that process data and perform tasks
-                                according to instructions given by software programs. They can perform
-                                a wide range of operations, from simple calculations to complex
-                                simulations.
+                            Computers are electronic devices that process data and perform tasks
+                            according to instructions given by software programs. They can perform
+                            a wide range of operations, from simple calculations to complex
+                            simulations.
                             </p>
                         </div>
-                    </div>
-                </div>
+                        </motion.div>
+                    </motion.div>
                 <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                     <img
                         alt=""
@@ -85,6 +122,7 @@ export default function Home() {
                                 </span>
                                 </li>
                             </ul>
+                            
                             <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">How do computers work?</h2>
                             <p className="mt-6 text-gray-700">
                                 Computers work by following a set of instructions called a program. They take input (like typing on a keyboard or clicking a mouse),
@@ -112,7 +150,7 @@ export default function Home() {
 
                 <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="flex flex-col items-center text-center bg-gray-800 p-8 rounded-xl shadow-md hover:scale-105 transition">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" alt="CPU Icon" className="w-20 h-20 mb-4" />
+                        <img src="https://cdn-icons-png.flaticon.com/128/900/900618.png" alt="CPU Icon" className="w-20 h-20 mb-4" />
                         <h3 className="text-xl font-semibold text-white">CPU</h3>
                         <p className="mt-2 text-gray-400">
                         The Central Processing Unit processes all instructions from software and hardware.
@@ -223,19 +261,19 @@ export default function Home() {
 
                 <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="group relative rounded-xl border border-gray-200 bg-gray-50 p-6 transition hover:shadow-lg hover:bg-white">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721286.png" alt="CPU" className="w-12 h-12 mb-4" />
+                        <img src="https://cdn-icons-png.flaticon.com/128/900/900618.png" alt="CPU" className="w-12 h-12 mb-4" />
                         <h3 className="text-lg font-semibold text-gray-800">CPU</h3>
                         <p className="mt-1 text-sm text-gray-600">The brain of the computer that performs calculations and tasks.</p>
                     </div>
 
                     <div className="group relative rounded-xl border border-gray-200 bg-gray-50 p-6 transition hover:shadow-lg hover:bg-white">
-                        <img src="https://cdn-icons-png.flaticon.com/512/10324/10324388.png" alt="RAM" className="w-12 h-12 mb-4" />
+                        <img src="https://cdn-icons-png.flaticon.com/128/9213/9213518.png" alt="RAM" className="w-12 h-12 mb-4" />
                         <h3 className="text-lg font-semibold text-gray-800">RAM</h3>
                         <p className="mt-1 text-sm text-gray-600">Temporary memory that stores active data and programs.</p>
                     </div>
 
                     <div className="group relative rounded-xl border border-gray-200 bg-gray-50 p-6 transition hover:shadow-lg hover:bg-white">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2807/2807830.png" alt="Operating System" className="w-12 h-12 mb-4" />
+                        <img src="https://cdn-icons-png.flaticon.com/128/732/732225.png" alt="Operating System" className="w-12 h-12 mb-4" />
                         <h3 className="text-lg font-semibold text-gray-800">Operating System</h3>
                         <p className="mt-1 text-sm text-gray-600">Software that manages hardware and provides services to applications.</p>
                     </div>
