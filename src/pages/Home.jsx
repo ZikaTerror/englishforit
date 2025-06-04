@@ -21,18 +21,6 @@ const fadeInUp = {
   }
 };
 
-const floatAnim = {
-  animate: {
-    y: [0, -15, 0],
-    transition: {
-      duration: 6,
-      repeat: Infinity,
-      repeatType: "loop",
-      ease: "easeInOut",
-    }
-  }
-};
-
 export default function Home() {
   return (
     <div className="bg-white">

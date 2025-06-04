@@ -1,12 +1,52 @@
-# React + Vite
+# 📘 IT Glossary App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An educational and interactive glossary of essential **Information Technology (IT)** terms. This web app is built with **React**, styled using **Tailwind CSS**, and enhanced with smooth animations from **Framer Motion**. Each term is visually illustrated using icons from **Flaticon**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies Used
 
-## Expanding the ESLint configuration
+* **React** – JavaScript library for building user interfaces.
+* **Tailwind CSS** – Utility-first CSS framework for styling.
+* **Framer Motion** – Animation library for React components.
+* **Flaticon** – Source of illustrative icons for glossary items.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Installation
+
+
+1. **Install dependencies:**
+
+```bash
+npm install
+```
+
+2. **Start the development server:**
+
+```bash
+npm run dev
+```
+
+---
+
+## 💡 Features
+
+* ✅ Glossary with 20+ core IT terms.
+* ✅ Visual icons for each concept using Flaticon.
+* ✅ Smooth animations using **Framer Motion**.
+* ✅ Scroll-to-glossary interaction with anchor navigation.
+* ✅ Fully responsive and modern design.
+
+---
+
+## 🖼️ Icon Credits
+
+All icons are from [Flaticon](https://www.flaticon.com/). Make sure to credit the original authors if you use these assets publicly or commercially.
+
+---
+
+## 📄 License
+
+This project is intended for **educational use only**. Feel free to use it in school projects. Do not remove icon attributions if publishing publicly.
+
